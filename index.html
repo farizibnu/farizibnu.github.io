@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Readex+Pro:wght@160..700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Readex+Pro:wght@160..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
   <link href="/src/style.css" rel="stylesheet">
 </head>
@@ -19,13 +19,16 @@
   <div id="app" class="flex flex-col min-h-screen">
     <div id="navbar" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out text-white">
       <nav class="bg-transparent p-4">
-        <ul class="flex space-x-4 justify-end font-semibold">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#technology">Technology</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-        </ul>
+        <div class="flex space-x-4 justify-end font-semibold">
+          <div class="transition delay-150 duration-300 ease-in-out hover:scale-110"><a href="#hero">Home</a></div>
+          <div class="transition delay-150 duration-300 ease-in-out hover:scale-110"><a href="#about">About</a></div>
+          <div class="transition delay-150 duration-300 ease-in-out hover:scale-110"><a
+              href="#technology">Technology</a></div>
+          <div class="transition delay-150 duration-300 ease-in-out hover:scale-110"><a
+              href="#experience">Experience</a></div>
+          <div class="transition delay-150 duration-300 ease-in-out hover:scale-110"><a href="#projects">Projects</a>
+          </div>
+        </div>
       </nav>
     </div>
     <div id="hero" class="bg-cover bg-center h-screen flex flex-col justify-center items-center"
@@ -36,10 +39,9 @@
         <div class="flex items-center  justify-between mt-4">
           <div class="w-1/5 h-2 rounded-xl bg-white"></div>
           <div class="w-4/5">
-            <p class="text-xl text-right italic">Frontend Developer | Mobile Developer | Backend Developer</p>
+            <p class="text-xl text-right">Frontend Developer | Mobile Developer | Backend Developer</p>
           </div>
         </div>
-        <p class="text-center mt-4">Explore my projects and experiences</p>
         <div class="flex items-center justify-center gap-2">
           <a href="https://github.com/farizibnu/"
             class="mt-6 flex gap-2 bg-slate-700 text-white px-4 py-2 rounded hover:bg-slate-800"><svg
@@ -60,27 +62,30 @@
     </div>
     <div id="about" class="bg-gray-50 px-8 py-16">
       <h2 class="text-5xl font-semibold text-center text-zinc-900 font-gabarito">What I Do</h2>
-      <p class="my-6 text-center">I am a passionate <span class="font-bold">designer</span> and <span
-          class="font-bold">developer</span> with a focus on creating impactful web and
+      <p class="my-6 text-center">I am a passionate <span
+          class="font-bold text-blue-400 bg-yellow-300 p-2">designer</span> and <span
+          class="font-jetbrains text-orange-400">&#40;"</span>
+        <span id="changingWord" class="font-bold inline-block transition-all duration-300 w-[5rem] font-jetbrains text-purple-600">developer</span>
+        <span class="font-jetbrains text-orange-400">"&#41;</span> with a focus on creating impactful web and
         mobile
         applications.</p>
       <div class="grid grid-cols-3 gap-4 text-center">
         <div
-          class="py-6 bg-cyan-500 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-sky-500 shadow-lg shadow-cyan-500/50 rounded-2xl flex items-center justify-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:animate-pulse">
+          class="cursor-pointer py-6 bg-cyan-500 hover:bg-gradient-to-r hover:from-cyan-500 hover:to-sky-500 shadow-lg shadow-cyan-500/50 rounded-2xl flex items-center justify-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:animate-pulse">
           <p class="text-2xl font-semibold text-white">
             Website Development
           </p>
           <p></p>
         </div>
         <div
-          class="py-6 bg-blue-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-violet-500 shadow-lg shadow-blue-500/50 rounded-2xl flex items-center justify-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:animate-pulse">
+          class="cursor-pointer py-6 bg-blue-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-violet-500 shadow-lg shadow-blue-500/50 rounded-2xl flex items-center justify-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:animate-pulse">
           <p class="text-2xl font-semibold text-white">
             Mobile App Development
           </p>
           <p></p>
         </div>
         <div
-          class="py-6 bg-indigo-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 shadow-lg shadow-indigo-500/50 rounded-2xl flex items-center justify-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:animate-pulse">
+          class="cursor-pointer py-6 bg-indigo-500 hover:bg-gradient-to-r hover:from-blue-500 hover:to-purple-500 shadow-lg shadow-indigo-500/50 rounded-2xl flex items-center justify-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-105 hover:animate-pulse">
           <p class="text-2xl font-semibold text-white">
             UI/UX Design
           </p>
@@ -338,7 +343,7 @@
     </div>
 
     <div id="experience" class="bg-gray-50 py-8 px-16">
-      <h2 class="text-5xl font-semibold text-center pb-8 text-zinc-900 font-gabarito">Experience</h2>
+      <h2 class="text-5xl font-semibold text-center mb-8 text-zinc-900 font-gabarito">Experience</h2>
       <div class="relative">
         <!-- Garis tengah -->
         <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-4 border-zinc-900"></div>
@@ -380,8 +385,8 @@
     </div>
 
     <div id="projects" class="bg-zinc-900 p-8">
-      <h2 class="text-5xl font-semibold text-center text-white font-gabarito">Projects</h2>
-      <div class="mt-2">
+      <h2 class="text-5xl font-semibold text-center mb-8 text-white font-gabarito">Projects</h2>
+      <div class="">
         <!-- project 1 -->
         <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg shadow-md mb-4">
           <div class="w-1/2 px-6">

@@ -20,6 +20,8 @@ module.exports = {
       fontFamily: {
         readex: ['Readex Pro', 'sans-serif'],
         gabarito: ['Gabarito', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'],
+        jetbrains: ['"JetBrains Mono"', 'monospace'],
       },
     },
   },
