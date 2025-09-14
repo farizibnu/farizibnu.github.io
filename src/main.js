@@ -1,5 +1,4 @@
 import './style.css';
-gsap.registerPlugin(ScrollTrigger);
 
 ///////////////////////////////////////////////////// SCROLL SMOOTH
 // Initialize Lenis
@@ -65,6 +64,7 @@ const tl = gsap.timeline({});
 
 //////////////////////////////////////////////////////// ANIMATION
 document.addEventListener('DOMContentLoaded', () => {
+  gsap.registerPlugin(ScrollTrigger);
   gsap
     .from('#animate-box', {
       x: 200,
@@ -85,7 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '#about-content',
       start: 'top 80%',
-       
     },
     y: -80,
     opacity: 1,
@@ -96,7 +95,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '#about-header',
       start: 'top 80%',
-       
     },
     x: 320,
     opacity: 1,
@@ -108,7 +106,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '#technology-header',
       start: 'top 80%',
-       
     },
     y: -80,
     opacity: 1,
@@ -120,7 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '#experience',
       start: 'top 80%',
-       
     },
     y: -80,
     opacity: 1,
@@ -131,7 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '#experience-content',
       start: 'top 80%',
-       
     },
     x: 320,
     opacity: 1,
@@ -143,7 +138,6 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '#projects',
       start: 'top 80%',
-       
     },
     y: -80,
     opacity: 1,
@@ -154,40 +148,36 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollTrigger: {
       trigger: '#project-1',
       start: 'top 80%',
-       
     },
     x: 320,
     opacity: 1,
     duration: 1,
     ease: 'power2.out',
   });
-    gsap.to('#project-2', {
+  gsap.to('#project-2', {
     scrollTrigger: {
       trigger: '#project-2',
       start: 'top 80%',
-       
     },
     x: -320,
     opacity: 1,
     duration: 1,
     ease: 'power2.out',
   });
-    gsap.to('#project-3', {
+  gsap.to('#project-3', {
     scrollTrigger: {
       trigger: '#project-3',
       start: 'top 80%',
-       
     },
     x: 320,
     opacity: 1,
     duration: 1,
     ease: 'power2.out',
   });
-    gsap.to('#project-4', {
+  gsap.to('#project-4', {
     scrollTrigger: {
       trigger: '#project-4',
       start: 'top 80%',
-       
     },
     x: -320,
     opacity: 1,
